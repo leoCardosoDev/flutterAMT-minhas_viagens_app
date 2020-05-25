@@ -13,7 +13,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void didChangeDependencies() {
     // TODO: implement didChangeDependencies
     super.didChangeDependencies();
-    Timer(Duration(seconds: 5), () {
+    Timer(Duration(seconds: 3), () {
       Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (_) => HomeScreen()));
     });
   }
