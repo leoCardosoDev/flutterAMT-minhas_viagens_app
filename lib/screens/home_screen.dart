@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mapsminhasviagensapp/screens/maps_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -9,7 +10,9 @@ class _HomeScreenState extends State<HomeScreen> {
   List _listViagens = ['Cristo Redentor', 'Grande Muralha', 'Taj Mahal', 'Mach Picchu', 'Coliseu'];
   void _abriMapa(){}
   void _excluirViagem(){}
-  void _addLocal(){}
+  void _addLocal(){
+   Navigator.push(context, MaterialPageRoute(builder: (_) => MapsScreen()));
+  }
 
   @override
   Widget build(BuildContext context) {
